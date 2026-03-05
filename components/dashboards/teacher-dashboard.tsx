@@ -1,5 +1,6 @@
 "use client"
 
+<<<<<<< HEAD
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
@@ -46,6 +47,13 @@ export function TeacherDashboard() {
   }
 
   const { totalStudents, activeExams, pendingGrades, exams } = data
+=======
+import Link from "next/link"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { classStudents, teacherExams } from "@/lib/mock-data"
+
+export function TeacherDashboard() {
+>>>>>>> 8ca0a2cfda5c941d1985d3709ed67e26c069ad8d
   return (
     <div className="space-y-6">
       <div>
@@ -61,7 +69,11 @@ export function TeacherDashboard() {
             </CardTitle>
           </CardHeader>
           <CardContent>
+<<<<<<< HEAD
             <div className="text-3xl font-bold text-foreground">{totalStudents}</div>
+=======
+            <div className="text-3xl font-bold text-foreground">{classStudents.length}</div>
+>>>>>>> 8ca0a2cfda5c941d1985d3709ed67e26c069ad8d
             <p className="text-sm text-muted-foreground mt-1">In your current class</p>
           </CardContent>
         </Card>
@@ -73,7 +85,11 @@ export function TeacherDashboard() {
             </CardTitle>
           </CardHeader>
           <CardContent>
+<<<<<<< HEAD
             <div className="text-3xl font-bold text-foreground">{activeExams}</div>
+=======
+            <div className="text-3xl font-bold text-foreground">{teacherExams.length}</div>
+>>>>>>> 8ca0a2cfda5c941d1985d3709ed67e26c069ad8d
             <p className="text-sm text-muted-foreground mt-1">Exams created</p>
           </CardContent>
         </Card>
@@ -85,7 +101,11 @@ export function TeacherDashboard() {
             </CardTitle>
           </CardHeader>
           <CardContent>
+<<<<<<< HEAD
             <div className="text-3xl font-bold text-foreground">{pendingGrades}</div>
+=======
+            <div className="text-3xl font-bold text-foreground">5</div>
+>>>>>>> 8ca0a2cfda5c941d1985d3709ed67e26c069ad8d
             <p className="text-sm text-muted-foreground mt-1">Submissions to grade</p>
           </CardContent>
         </Card>
@@ -133,7 +153,11 @@ export function TeacherDashboard() {
         </CardHeader>
         <CardContent>
           <div className="space-y-3">
+<<<<<<< HEAD
               {exams.map((exam) => (
+=======
+            {teacherExams.map((exam) => (
+>>>>>>> 8ca0a2cfda5c941d1985d3709ed67e26c069ad8d
               <div key={exam.id} className="flex items-center justify-between py-2 border-b border-border last:border-0">
                 <div>
                   <p className="text-sm font-medium text-foreground">{exam.name}</p>
